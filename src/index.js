@@ -15,6 +15,7 @@ import EditPost from "./pages/EditPost";
 import Logout from "./pages/Logout";
 import CategoryPosts from "./pages/CategoryPosts";
 import Dashoboard from "./pages/Dashboard";
+import AuthorPosts from "./pages/AuthorPosts";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
       {
         path: "post:id/edit",
         element: <EditPost />,
+      },
+      {
+        path: "posts/users/:id",
+        element: <AuthorPosts />,
       },
       {
         path: "myposts/:id",
