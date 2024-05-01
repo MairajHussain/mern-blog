@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logoipsum-311.svg";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
   return (
     <nav>
-      <div className="container nav_container">
+      <div className="container nav__container">
         <Link to="/" className="nav__logo">
           <img src={Logo} alt="Navbar logo" />
         </Link>
@@ -22,8 +23,10 @@ const Header = () => {
           <li>
             <Link to="/logout">Sign Out</Link>
           </li>
-          <button className="nav__toggle-btn"></button>
         </ul>
+        <button className="nav__toggle-btn">
+          <AiOutlineClose />
+        </button>
       </div>
     </nav>
   );
